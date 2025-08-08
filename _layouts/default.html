@@ -1,1 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="/">{{ site.title }}</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/career">Career</a>
+        <a href="/education">Education</a>
+        <a href="/community">Community</a>
+        <a href="/travel">Travel</a>
+        <a href="/admin" class="cms-link">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2025 Ricky Contreras · <a href="https://github.com/rickyycontreras" target="_blank">github.com/rickyycontreras</a></p>
+    </div>
+  </footer>
+</body>
+</html>
 
