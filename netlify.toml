@@ -1,1 +1,7 @@
+[build]
+  publish = "_site"
+  command = "jekyll build"
+
+[[plugins]]
+package = "@netlify/plugin-jekyll"
 
