@@ -22,10 +22,7 @@ permalink: /career/
   <ul>
     <li>CRM data management, social media & webinar support, and executive assistance during scale-up phase.</li>
   </ul>
-
-  <p>
-  <a class="btn" href="/assets/uploads/Resume.docx" download>Download Resume</a>
-</p>
+  <p><a class="btn" href="{{ site.resume_path }}" download>Download Resume</a></p>
 
 </section>
 
