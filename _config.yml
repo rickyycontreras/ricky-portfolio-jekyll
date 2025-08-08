@@ -1,1 +1,6 @@
+title: "Ricky Contreras"
+description: "People Strategy Consultant | Customer Success | Community Builder"
+baseurl: ""     # keep empty on Netlify
+url: ""         # Netlify will set this
+plugins: []
 
