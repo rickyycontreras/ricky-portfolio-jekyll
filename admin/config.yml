@@ -1,1 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown", hint: "Edit the intro text below the title." }
+      - file: "career.md"
+        label: "Career"
+        name: "career"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "education.md"
+        label: "Education"
+        name: "education"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "community.md"
+        label: "Community"
+        name: "community"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "posts"
+    label: "Travel Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Cover Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
 
